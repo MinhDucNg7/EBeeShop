@@ -1,0 +1,178 @@
+.header {
+    .header-top {
+        font-size: 1.4rem;
+        height: 4rem;
+        line-height: 4rem;
+        background-color: $bg-color;
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-bar {
+            &__social {
+                .top-bar__link {
+                    color: $delTag-color;
+                }
+            }
+            &__list {
+                list-style: none;
+            }
+            &__item {
+                display: inline-block;
+                padding: 0 1rem;
+                position: relative;
+            }
+            &__link {
+                text-decoration: none;
+                color: $text-color;
+                font-weight: 300;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .header-main {
+        height: 155px;
+        background-color: $white-color;
+        &__content {
+            // background-color: rgb(131, 112, 87);
+            display: flex;
+            height: 110px;
+            // justify-content: center;
+            align-items: center;
+            &__logo {
+                flex: 1;
+                position: relative;
+                img {
+                    height: 8rem;
+                }
+                h2 {
+                    color: $primary-color;
+                }
+                .brand-text {
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    padding: 0;
+                    line-height: 1px;
+                    color: $delTag-color;
+                    position: absolute;
+                    top: 120%;
+                }
+            }
+            &__search-box {
+                flex: 3;
+                .input-group {
+                    width: 100%;
+                    position: relative;
+                    input {
+                        height: 4rem;
+                        border: 2px solid $primary-color;
+                        border-radius: 5px;
+                        color: $secondary-color;
+                        &::placeholder {
+                            font-style: italic;
+                        }
+                    }
+                    .btn-search {
+                        height: 4rem;
+                        border-radius: 0 5px 5px 0;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        i {
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+            &__right-box {
+                flex: 2;
+                &__list {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                &__item {
+                    display: inline-block;
+                    position: relative;
+                }
+                &__link {
+                    text-decoration: none;
+                    color: $text-color;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                    .--badge {
+                        content: "";
+                        display: block;
+                        background-color: $primary-color;
+                        width: 3rem;
+                        height: 1.5rem;
+                        padding-top: 2px;
+                        border-radius: 1.2rem;
+                        text-align: center;
+                        color: $white-color;
+                        font-weight: 400;
+                        font-size: 1.1rem;
+                        line-height: 1.1rem;
+                        position: absolute;
+                        top: -6px;
+                        left: 1.5rem;
+                    }
+                    .icon {
+                        font-size: 2.5rem;
+                        font-weight: 100;
+                        display: block;
+                        height: 100%;
+                        width: auto;
+                        float: left;
+                    }
+                    .text-desc {
+                        float: left;
+                        font-size: 1.2rem;
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+        &__nav-block {
+            height: 45px;
+            background-color: $delTag-color;
+            nav ul {
+                line-height: 45px;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                li {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+// Mobile
+.header-main {
+    &__mobile {
+        position: relative;
+        &__logo {
+            h2 {
+                padding-top: 20px;
+                font-size: 2.5rem;
+                color: $primary-color;
+            }
+        }
+        .btn-toggle {
+            position: absolute;
+            top: calc(50% - 0.5rem);
+            right: 0;
+            i {
+                font-size: 2rem;
+            }
+        }
+    }
+}

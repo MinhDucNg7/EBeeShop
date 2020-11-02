@@ -1,0 +1,62 @@
+/*
+******************************************************************
+|                        MEDIA QUERY CSS                         |
+******************************************************************
+*/
+
+// Mobile
+@media only screen and (max-width:739px) {
+    .header {
+        .header-main {
+            &__content {
+                height: 90px;
+                &__logo {
+                    display: none;
+                }
+                &__right-box {
+                    display: none;
+                }
+            }
+            .text-desc {
+                display: none;
+            }
+        }
+    }
+}
+
+// Tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .header {
+        .header-main {
+            &__content {
+                &__logo {
+                    display: none;
+                }
+                &__right-box {
+                    &__item {
+                        margin: 0 2rem;
+                    }
+                }
+            }
+            .text-desc {
+                display: none;
+            }
+        }
+    }
+}
+
+// PC Laptop
+@media only screen and (min-width:1024px) {
+    .header {
+        .header-main {
+            &__mobile {
+                display: none;
+            }
+            &__content {
+                &__logo-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
