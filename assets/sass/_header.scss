@@ -3,7 +3,7 @@
         font-size: 1.4rem;
         height: 4rem;
         line-height: 4rem;
-        background-color: $bg-color;
+        background-color: #fafafa;
         &__content {
             display: flex;
             justify-content: space-between;
@@ -39,34 +39,42 @@
             // background-color: rgb(131, 112, 87);
             display: flex;
             height: 110px;
-            // justify-content: center;
             align-items: center;
             &__logo {
+                a {
+                    display: block;
+                    height: 100%;
+                }
                 flex: 1;
                 position: relative;
+                padding: 0;
+                float: left;
                 img {
-                    height: 8rem;
+                    height: 5rem;
+                    transition: ease .1s;
                 }
-                h2 {
-                    color: $primary-color;
+                &:hover img {
+                    opacity: .7;
                 }
                 .brand-text {
+                    display: block;
+                    width: 100%;
                     font-size: 1.2rem;
                     font-weight: 300;
-                    padding: 0;
-                    line-height: 1px;
+                    letter-spacing: 1.5px;
                     color: $delTag-color;
-                    position: absolute;
-                    top: 120%;
+                    flex-wrap: nowrap;
                 }
             }
             &__search-box {
                 flex: 3;
+                margin: 15px 20px 0 20px;
                 .input-group {
+                    height: 100%;
                     width: 100%;
                     position: relative;
                     input {
-                        height: 4rem;
+                        height: 3.5rem;
                         border: 2px solid $primary-color;
                         border-radius: 5px;
                         color: $secondary-color;
@@ -75,27 +83,155 @@
                         }
                     }
                     .btn-search {
-                        height: 4rem;
+                        height: 3.5rem;
                         border-radius: 0 5px 5px 0;
                         position: absolute;
                         top: 0;
                         right: 0;
-                        i {
-                            margin-right: 7px;
+                        padding: 0 1.5rem;
+                    }
+                }
+                &__widget {
+                    padding-top: 3px;
+                    &__list {}
+                    &__item {
+                        display: inline-block;
+                        padding: 0 7px;
+                        a {
+                            text-decoration: none;
+                            font-weight: 300;
+                            font-size: 1.2rem;
+                            color: #666;
+                            text-transform: lowercase;
+                            &:hover {
+                                text-decoration: underline;
+                                color: $primary-color;
+                            }
                         }
                     }
                 }
             }
             &__right-box {
                 flex: 2;
+                // display: block;
                 &__list {
+                    height: 100%;
+                    padding-bottom: 10px;
                     list-style: none;
                     display: flex;
                     justify-content: space-around;
                 }
+                .cart-popup:hover .item__dropdown {
+                    display: block;
+                }
                 &__item {
+                    // cursor: pointer;
                     display: inline-block;
                     position: relative;
+                    .item__dropdown {
+                        transform-origin: calc(100% - 20px) top;
+                        animation: zoom ease-in .3s;
+                        background-color: $white-color;
+                        position: absolute;
+                        top: 150%;
+                        right: 0;
+                        width: 350px;
+                        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+                        border-top: 3px solid $secondary-color;
+                        z-index: 1;
+                        display: none;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -30px;
+                            right: 30px;
+                            border: 15px solid;
+                            border-color: transparent transparent $secondary-color transparent;
+                        }
+                        &::after {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: -20px;
+                            width: 100%;
+                            height: 20px;
+                        }
+                    }
+                    .dropdown__item {
+                        border-bottom: 1px solid #ccc;
+                        .item-box {
+                            display: flex;
+                            height: 80px;
+                            padding: 0;
+                            font-size: 1.3rem;
+                            position: relative;
+                            .item-box__image {
+                                vertical-align: middle;
+                                img {
+                                    height: 80px;
+                                }
+                            }
+                            .item-box__content {
+                                height: 100%;
+                                width: 100%;
+                                padding: 15px;
+                                a {
+                                    text-decoration: none;
+                                    color: $text-color;
+                                    display: block;
+                                    font-size: 1.4rem;
+                                    font-weight: 500;
+                                }
+                                .quantity {
+                                    color: $delTag-color;
+                                }
+                                .btn-delete {
+                                    display: block;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    font-size: 2.2rem;
+                                    top: 0;
+                                    right: 10px;
+                                    &:hover {
+                                        color: $primary-color;
+                                    }
+                                }
+                            }
+                            // &:hover {
+                            //     background-color: rgba($secondary-color, .1);
+                            // }
+                        }
+                    }
+                    .dropdown__footer {
+                        .item-box__footer {
+                            height: 50px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            .total {
+                                vertical-align: middle;
+                                font-weight: 300;
+                                font-size: 1.4rem;
+                                text-transform: uppercase;
+                            }
+                            .total-money {
+                                font-weight: 700;
+                                font-size: 1.8rem;
+                            }
+                        }
+                        .btn-inCart {
+                            padding: 30px 0;
+                            border-top: 1px solid #ccc;
+                            .btn {
+                                font-size: 1.5rem;
+                                width: 45%;
+                                padding: 7px;
+                            }
+                        }
+                    }
                 }
                 &__link {
                     text-decoration: none;
@@ -141,37 +277,23 @@
         }
         &__nav-block {
             height: 45px;
-            background-color: $delTag-color;
-            nav ul {
-                line-height: 45px;
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-                li {
-                    padding: 0 20px;
+            // background-color: $delTag-color;
+            padding: 0;
+            &__nav {
+                background-color: $secondary-color;
+                border-radius: 20px 20px 0 0;
+                padding: 0 15px;
+                .nav__list {
+                    display: flex;
+                    justify-content: space-around;
                 }
-            }
-        }
-    }
-}
-
-// Mobile
-.header-main {
-    &__mobile {
-        position: relative;
-        &__logo {
-            h2 {
-                padding-top: 20px;
-                font-size: 2.5rem;
-                color: $primary-color;
-            }
-        }
-        .btn-toggle {
-            position: absolute;
-            top: calc(50% - 0.5rem);
-            right: 0;
-            i {
-                font-size: 2rem;
+                .nav__item {
+                    display: inline-block;
+                    line-height: 45px
+                }
+                .nav__link {
+                    color: $white-color;
+                }
             }
         }
     }

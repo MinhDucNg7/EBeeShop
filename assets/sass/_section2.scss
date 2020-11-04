@@ -1,0 +1,41 @@
+.second-section {
+    &__container {
+        padding: 0;
+    }
+    &__content {
+        user-select: none;
+        height: 90px;
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+    }
+    &__item {
+        padding: 5px;
+        width: 90%;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $white-color;
+    }
+    &__item-icon {
+        width: 2.5rem;
+        padding: 10px 5px;
+        display: inline-block;
+        i {
+            width: 100%;
+            font-size: 4rem;
+        }
+    }
+    &__item-heading {
+        display: inline-block;
+        width: 75%;
+    }
+    &__heading-text {
+        font-size: 1.5rem;
+    }
+    &__heading-desc {
+        font-size: 1.2rem;
+        color: $delTag-color;
+    }
+}

@@ -1,6 +1,6 @@
 // BASE COLORS
 $text-color: #363f4d;
-$bg-color: #FAFAFA;
+$bg-color: #F3F3F3;
 $white-color: #fff;
 $black-color: #000;
 $primary-color: #EB4632;
@@ -33,7 +33,7 @@ html {
     font-size: 62.5%;
     line-height: 1.15;
     scroll-behavior: smooth;
-    // overflow-x: hidden;
+    background-color: $bg-color;
 }
 
 body {
@@ -43,7 +43,19 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: $text-color;
-    background-color: $bg-color;
+}
+
+.bee-section {
+    margin-top: 10px;
+}
+
+.small {
+    font-size: 80%;
+}
+
+// UnStyle List
+ul.unlist-tyle {
+    list-style: none;
 }
 
 
@@ -94,7 +106,6 @@ body {
     }
     &:focus {
         outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     }
     &:disabled,
     &.disable {
@@ -104,6 +115,10 @@ body {
     &.btn-primary {
         color: $white-color;
         background-color: $primary-color;
+    }
+    &.btn-secondary {
+        color: $white-color;
+        background-color: $secondary-color;
     }
 }
 

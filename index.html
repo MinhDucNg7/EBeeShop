@@ -22,7 +22,7 @@
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="Thương Mại Điện Tử eBee">
-    <meta property="og:url" content="https://electro7.arenacommerce.com/">
+    <meta property="og:url" content="https://ebeeshop.com">
     <meta property="og:title" content="e-Bee | Mua Hàng Trực Tuyến">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Thỏa sức mua sắm qua mạng hàng ngàn mặt hàng chính hãng, nhiều ưu đãi hấp dẫn. Đội ngũ chăm sóc khách hàng tận tình, giàu kinh nghiệm">
@@ -49,6 +49,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="assets/js/fontawesome_pro.js"></script>
+
 </head>
 
 <body>
@@ -59,7 +60,9 @@
     </div> -->
 
     <div class="wrapper">
+        <!-- Begin Header -->
         <header class="header">
+            <!-- Begin Top Header -->
             <div class="header-top">
                 <div class="container">
                     <div class="header-top__content">
@@ -79,7 +82,7 @@
                         <div class="top-bar__menu">
                             <ul class="top-bar__list">
                                 <li class="top-bar__item --separate">
-                                    <a class="top-bar__link" href="#">Kênh bán hàng</a>
+                                    <a class="top-bar__link" href="#" target="_blank">Kênh bán hàng</a>
                                 </li>
                                 <li class="top-bar__item">
                                     <a class="top-bar__link" href="#">Hỗ trợ</a>
@@ -89,26 +92,52 @@
                     </div>
                 </div>
             </div>
+            <!-- End Top Header -->
+
+            <!-- Begin Main Header -->
             <div class="header-main">
                 <div class="container">
-                    <div class="header-main__mobile">
-                        <div class="header-main__mobile__logo --text-center">
-                            <h2>EBee Shop</h2>
-                        </div>
-                        <div class="btn btn-toggle"><i class="fas fa-bars"></i></div>
-                    </div>
                     <div class="header-main__content">
+                        <!-- Logo Brand -->
                         <div class="header-main__content__logo">
-                            <!-- <img class="header-main__logo__brand" src="assets/images/logo.png" alt=""> -->
-                            <h2>EBee Shop</h2>
-                            <span class="brand-text">Mua hàng không giới hạn!</span>
+                            <a href="/">
+                                <img class="header-main__logo__brand" draggable="false" src="assets/images/logo.svg" alt="EBee Logo">
+                            </a>
+                            <span class="brand-text">Mua sắm không giới hạn!</span>
                         </div>
+                        <!-- Search Box -->
                         <div class="header-main__content__search-box">
                             <div class="input-group">
                                 <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm">
-                                <button class="btn btn-primary btn-search"><i class="far fa-search"></i>Tìm kiếm</button>
+                                <button class="btn btn-primary btn-search"><i class="far fa-search"></i></button>
+                            </div>
+                            <div class="header-main__content__search-box__widget">
+                                <ul class="unlist-tyle header-main__content__search-box__widget__list">
+                                    <li class="header-main__content__search-box__widget__item">
+                                        <a href="#">túi sách</a>
+                                    </li>
+                                    <li class="header-main__content__search-box__widget__item">
+                                        <a href="#">giày</a>
+                                    </li>
+                                    <li class="header-main__content__search-box__widget__item">
+                                        <a href="#">ví</a>
+                                    </li>
+                                    <li class="header-main__content__search-box__widget__item">
+                                        <a href="#">balo nam</a>
+                                    </li>
+                                    <li class="header-main__content__search-box__widget__item">
+                                        <a href="#">quần áo</a>
+                                    </li>
+                                    <li class="header-main__content__search-box__widget__item">
+                                        <a href="#">điện thoại</a>
+                                    </li>
+                                    <li class="header-main__content__search-box__widget__item">
+                                        <a href="#">áo khoác</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                        <!-- User Box -->
                         <div class="header-main__content__right-box">
                             <ul class="header-main__content__right-box__list">
                                 <li class="header-main__content__right-box__item">
@@ -118,12 +147,52 @@
                                         <span class="text-desc">Vận chuyển</span>
                                     </a>
                                 </li>
-                                <li class="header-main__content__right-box__item">
+                                <li class="header-main__content__right-box__item cart-popup">
                                     <a href="#" class="header-main__content__right-box__link">
                                         <i class="icon far fa-shopping-cart"></i>
                                         <span class="--badge">2</span>
                                         <span class="text-desc">Giỏ hàng</span>
                                     </a>
+                                    <!-- Dropdown Menu of Cart -->
+                                    <div class="item__dropdown">
+                                        <ul class="dropdown__list unlist-tyle">
+                                            <!-- <li class="dropdown__item">Không có sản phẩm trong giỏ</li> -->
+                                            <li class="dropdown__item">
+                                                <div class="item-box">
+                                                    <div class="item-box__image">
+                                                        <img src="assets/images/product-01.jpg" alt="">
+                                                    </div>
+                                                    <div class="item-box__content">
+                                                        <a class="name-product" href="#">Apple MacBook Air 13" 2020</a>
+                                                        <span class="quantity">1</span> x <span class="price">25.000.000</span>
+                                                        <a href="#" class="btn btn-delete">&times;</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <div class="item-box">
+                                                    <div class="item-box__image">
+                                                        <img src="assets/images/product-01.jpg" alt="">
+                                                    </div>
+                                                    <div class="item-box__content">
+                                                        <a class="name-product" href="#">Apple MacBook Air 13" 2020</a>
+                                                        <span class="quantity">1</span> x <span class="price">25.000.000</span>
+                                                        <a href="#" class="btn btn-delete">&times;</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown__item dropdown__footer">
+                                                <div class="item-box item-box__footer">
+                                                    <h5 class="total">Tổng tiền:</h5>
+                                                    <span class="total-money">50.000.000</span>
+                                                </div>
+                                                <div class="item-box item-box__footer btn-inCart">
+                                                    <a href="#" class="btn btn-secondary">Xem Giỏ Hàng</a>
+                                                    <a href="#" class="btn btn-primary">Thanh Toán</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li class="header-main__content__right-box__item">
                                     <a href="#" class="header-main__content__right-box__link">
@@ -135,22 +204,371 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="header-main__nav-block">
-                    <div class="container">
+                <!-- Begin Navigation -->
+                <div class="header-main__nav-block">
+                    <div class="container" style="padding: 0;">
                         <nav class="header-main__nav-block__nav">
-                            <ul>
-                                <li><a href="#">All</a></li>
-                                <li><a href="#">Mall</a></li>
-                                <li><a href="#">Recent</a></li>
-                                <li><a href="#">Popular</a></li>
-                                <li><a href="#">Flash Deal</a></li>
-                                <li><a href="#">XNXX</a></li>
+                            <ul class="nav__list unlist-tyle">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Tất cả</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Tất cả</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Tất cả</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Tất cả</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
-                </div> -->
+                </div>
+                <!-- End Navigation -->
             </div>
+            <!-- End Main Header -->
         </header>
+        <!-- End Header -->
+        <!-- Begin Main Page -->
+        <main class="main">
+            <!-- Begin Section 1 -->
+            <section class="bee-section first-section">
+                <div class="container first-section__container">
+                    <div class="row first-section__row">
+                        <!-- Begin Left Menu -->
+                        <div class="col-3 first-section__col-left">
+                            <div class="first-section__menu-box">
+                                <div class="first-section__menu-header">
+                                    <h5 class="first-section__menu-heading">
+                                        <a href="#" class="first-section__menu-link">
+                                            <i class="far fa-bars"></i>Tất cả sản phẩm
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div class="first-section__menu-content">
+                                    <nav class="first-section__menu-nav">
+                                        <ul class="first-section__menu-list">
+                                            <li class="first-section__menu-item menu-item__dropdown">
+                                                <a class="first-section__menu-item-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                                <div class="first-section__dropdown-box">
+                                                    <ul class="dropdown-list">
+                                                        <h5>title</h5>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dropdown-list">
+                                                        <h5>title</h5>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dropdown-list">
+                                                        <h5>title</h5>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dropdown-list">
+                                                        <h5>title</h5>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dropdown-list">
+                                                        <h5>title</h5>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dropdown-list">
+                                                        <h5>title</h5>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-item__link">
+                                                                Lorem ipsum dolor sit.
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="first-section__menu-item">
+                                                <a class="first-section__menu-item-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                            </li>
+                                            <li class="first-section__menu-item">
+                                                <a class="first-section__menu-item-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                            </li>
+                                            <li class="first-section__menu-item">
+                                                <a class="first-section__menu-item-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                            </li>
+                                            <li class="first-section__menu-item">
+                                                <a class="first-section__menu-item-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                            </li>
+                                            <li class="first-section__menu-item">
+                                                <a class="first-section__menu-item-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                            </li>
+                                            <li class="first-section__menu-item">
+                                                <a class="first-section__menu-item-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Left Menu -->
+                        <!-- Begin Banner Center -->
+                        <div class="col-6 first-section__col-center">
+                            <div class="first-section__center-content">
+                                <div class="first-section__center-inner">
+                                    <div class="first-section__center-text">
+                                        <p class="first-section__center-title">Sản phẩm nổi bật</p>
+                                        <h3 class="first-section__center-heading">Bộ Sưu Tập Mùa Đông 2020</h3>
+                                        <p class="first-section__center-deal">Giảm giá <span class="first-section__center-deal-percent">30%</span> trong tuần này</p>
+                                        <a href="#" class="btn btn-section-center">Khám phá ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Banner Center -->
+                        <!-- Begin Right Box -->
+                        <div class="col-3 first-section__col-right">
+                            <div class="first-section__deal-box">
+                                <div class="first-section__deal-header">
+                                    <h5 class="first-section__deal-heading">Hot Deals</h5>
+                                    <div class="first-section__deal-arrow-box">
+                                        <a href="#" id="btn-prev" class="btn">
+                                            <i class="far fa-arrow-circle-left"></i>
+                                        </a>
+                                        <a href="#" id="btn-next" class="btn">
+                                            <i class="far fa-arrow-circle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="first-section__deal-content">
+                                    <div class="first-section__deal-sale-box">
+                                        <ul class="first-section__deal-sale-list">
+                                            <li class="first-section__deal-sale-item">
+                                                <div class="first-section__deal-img-box">
+                                                    <img class="first-section__deal-img" draggable="false" src="assets/images/product-01.jpg" alt="">
+                                                </div>
+                                                <div class="first-section__deal-desc">
+                                                    <div class="first-section__deal-desc-inner">
+                                                        <p class="product-name">
+                                                            <a href="#">Apple MacBook Air 13 256GB</a>
+                                                        </p>
+                                                        <span class="product-price">
+                                                            <span class="text-small product-del-price">35.000.000</span> 25.300.000 ₫
+                                                        </span>
+                                                        <a href="#" class="btn btn-secondary btn-add-cart">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="first-section__deal-sale-item">
+                                                <div class="first-section__deal-img-box">
+                                                    <img class="first-section__deal-img" draggable="false" src="assets/images/product-02.jpg" alt="">
+                                                </div>
+                                                <div class="first-section__deal-desc">
+                                                    <div class="first-section__deal-desc-inner">
+                                                        <p class="product-name">
+                                                            <a href="#">Apple MacBook Air 13 256GB</a>
+                                                        </p>
+                                                        <span class="product-price">
+                                                            <span class="text-small product-del-price">35.000.000</span> 25.300.000 ₫
+                                                        </span>
+                                                        <a href="#" class="btn btn-secondary btn-add-cart">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="first-section__deal-sale-item">
+                                                <div class="first-section__deal-img-box">
+                                                    <img class="first-section__deal-img" draggable="false" src="assets/images/product-03.jpg" alt="">
+                                                </div>
+                                                <div class="first-section__deal-desc">
+                                                    <div class="first-section__deal-desc-inner">
+                                                        <p class="product-name">
+                                                            <a href="#">Apple MacBook Air 13 256GB</a>
+                                                        </p>
+                                                        <span class="product-price">
+                                                            <span class="text-small product-del-price">35.000.000</span> 25.300.000 ₫
+                                                        </span>
+                                                        <a href="#" class="btn btn-secondary btn-add-cart">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="first-section__deal-sale-item">
+                                                <div class="first-section__deal-img-box">
+                                                    <img class="first-section__deal-img" draggable="false" src="assets/images/product-02.jpg" alt="">
+                                                </div>
+                                                <div class="first-section__deal-desc">
+                                                    <div class="first-section__deal-desc-inner">
+                                                        <p class="product-name">
+                                                            <a href="#">Apple MacBook Air 13 256GB</a>
+                                                        </p>
+                                                        <span class="product-price">
+                                                            <span class="text-small product-del-price">35.000.000</span> 25.300.000 ₫
+                                                        </span>
+                                                        <a href="#" class="btn btn-secondary btn-add-cart">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Right Box -->
+                    </div>
+                </div>
+            </section>
+            <!-- End Section1 -->
+            <!-- Begin Section2 -->
+            <section class="bee-section second-section">
+                <div class="second-section__container container">
+                    <div class="second-section__row">
+                        <div class="second-section__content">
+                            <div class="second-section__item">
+                                <div class="second-section__item-icon">
+                                    <i class="fal fa-shipping-timed"></i>
+                                </div>
+                                <div class="second-section__item-heading">
+                                    <h5 class="second-section__heading-text">Giao Hàng Nhanh Chóng</h5>
+                                    <p class="second-section__heading-desc">Các đơn hàng đặt trước 15h sẽ được giao trong ngày.</p>
+                                </div>
+                            </div>
+                            <div class="second-section__item">
+                                <div class="second-section__item-icon">
+                                    <i class="fal fa-user-headset"></i>
+                                </div>
+                                <div class="second-section__item-heading">
+                                    <h5 class="second-section__heading-text">Hỗ Trợ Trực Tuyến 24/24</h5>
+                                    <p class="second-section__heading-desc">Nhân viên hỗ trợ luôn túc trực 24h mỗi ngày.</p>
+                                </div>
+                            </div>
+                            <div class="second-section__item">
+                                <div class="second-section__item-icon">
+                                    <i class="fal fa-piggy-bank"></i>
+                                </div>
+                                <div class="second-section__item-heading">
+                                    <h5 class="second-section__heading-text">Hỗ Trợ Hoàn Tiền</h5>
+                                    <p class="second-section__heading-desc">Hoàn tiền sản phẩm lỗi, giả, kém chất lượng.</p>
+                                </div>
+                            </div>
+                            <div class="second-section__item">
+                                <div class="second-section__item-icon">
+                                    <i class="fal fa-badge-percent"></i>
+                                </div>
+                                <div class="second-section__item-heading">
+                                    <h5 class="second-section__heading-text">Ưu đãi Cho Thành Viên</h5>
+                                    <p class="second-section__heading-desc">Nhiều ưu đãi đặc biệt cho thành viên của EBee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section2 -->
+        </main>
+        <!-- End Main Page -->
     </div>
 
     <!-- Import JavaScript Files -->
