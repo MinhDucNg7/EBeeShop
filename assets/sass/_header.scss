@@ -1,4 +1,7 @@
 .header {
+    .container {
+        padding: 0;
+    }
     .header-top {
         font-size: 1.4rem;
         height: 4rem;
@@ -33,6 +36,9 @@
         }
     }
     .header-main {
+        .container {
+            padding: 0
+        }
         height: 155px;
         background-color: $white-color;
         &__content {
@@ -277,22 +283,35 @@
         }
         &__nav-block {
             height: 45px;
-            // background-color: $delTag-color;
             padding: 0;
+            width: 100%;
+            background-color: rgba($color: $secondary-color, $alpha: 0.8); // border-radius: 20px 20px 0 0;
             &__nav {
-                background-color: $secondary-color;
-                border-radius: 20px 20px 0 0;
+                margin: 0;
                 padding: 0 15px;
-                .nav__list {
-                    display: flex;
-                    justify-content: space-around;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .nav-left {
+                    width: 30%;
+                    .nav-left__list {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .nav-left__item {
+                        a {
+                            line-height: 45px;
+                            color: $white-color;
+                            text-decoration: none;
+                        }
+                    }
                 }
-                .nav__item {
-                    display: inline-block;
-                    line-height: 45px
-                }
-                .nav__link {
-                    color: $white-color;
+                .nav-right {
+                    a {
+                        padding: 5px 20px;
+                        border-radius: 5px;
+                    }
                 }
             }
         }

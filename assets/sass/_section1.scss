@@ -5,6 +5,7 @@
         color: $text-color;
         padding: 0;
         position: relative;
+        border: 1px solid rgba($color: #000000, $alpha: .1);
     }
     &__menu-header,
     &__deal-header {
@@ -214,71 +215,3 @@
         }
     }
 }
-
-// .right {
-//     .header {
-//         display: flex;
-//         justify-content: space-between;
-//         .arrow {
-//             a {
-//                 font-size: 2rem;
-//                 color: $white-color;
-//                 padding: 0;
-//                 user-select: none;
-//                 transition: 0.6s ease;
-//             }
-//         }
-//     }
-//     .contents {
-//         text-align: center;
-//         width: 100%;
-//         height: 100%;
-//         margin: 0 auto;
-//         overflow: hidden;
-//         user-select: none;
-//         .sale-box {
-//             margin-bottom: 15px;
-//             position: relative;
-//             display: flex;
-//             width: 100%;
-//             .content {
-//                 display: block;
-//                 min-width: 100%;
-//                 .image {
-//                     pointer-events: none;
-//                     img {
-//                         height: 80%;
-//                         width: 90%;
-//                         position: relative;
-//                     }
-//                 }
-//                 .desc {
-//                     width: 100%;
-//                     .name-product {
-//                         padding-bottom: 10px;
-//                         a {
-//                             color: $text-color;
-//                             text-decoration: none;
-//                         }
-//                     }
-//                     .price {
-//                         display: block;
-//                         color: $primary-color;
-//                         font-weight: 500;
-//                         font-size: 1.8rem;
-//                         padding-bottom: 10px;
-//                         .small {
-//                             color: $delTag-color;
-//                             padding: 5px;
-//                         }
-//                     }
-//                     .btn-cart {
-//                         display: inline-block;
-//                         border-radius: 5px;
-//                         padding: 7px 15px
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }

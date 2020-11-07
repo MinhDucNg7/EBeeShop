@@ -54,8 +54,14 @@ body {
 }
 
 // UnStyle List
-ul.unlist-tyle {
+ul.list--unstyle {
     list-style: none;
+}
+
+.bee-section {
+    .container {
+        padding: 0;
+    }
 }
 
 
@@ -119,6 +125,16 @@ ul.unlist-tyle {
     &.btn-secondary {
         color: $white-color;
         background-color: $secondary-color;
+    }
+    &.btn-outline-primary {
+        color: $primary-color;
+        border-color: $primary-color;
+        background-color: transparent;
+        &:hover {
+            color: $white-color;
+            background-color: $primary-color;
+            transition: ease-in .2s;
+        }
     }
 }
 
